@@ -25,6 +25,10 @@ body{
   margin: auto;
 }
 
+img {
+  width: 80px;
+}
+
 button{
   font-family: "Schoolbell", sans-serif;
   border: none;
@@ -42,30 +46,37 @@ button{
 }
 
 #mem1-button{
-  background-color: rgb(255, 0, 98);
+  background-color: rgb(255, 75, 99);
 }
 #mem1-button:active {
-  background-color: blueviolet;
+  background-color: rgb(90, 73, 104);
 }
 
 #mem2-button{
-  background-color: rgb(222, 247, 84);
+  background-color: rgb(233, 227, 90);
 }
 #mem2-button:active {
-  background-color: blueviolet;
+  background-color: rgb(90, 73, 104);
 }
 
 #mem3-button{
-  background-color: rgb(99, 231, 248);
+  background-color: rgb(144, 235, 230);
 }
 #mem3-button:active {
-  background-color: blueviolet;
+  background-color: rgb(90, 73, 104);
 }
 
 #petri-dish{
-  width: 200px;
-  background-color:rgb(118, 238, 202);
-  padding:200px;
+  width: 600px;
+  background-color:rgb(255, 235, 239);
+  height:600px;
+  /* padding: 10%; */
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
 }
 
 /* Bob  from https://ianlunn.github.io/Hover/#effects*/
