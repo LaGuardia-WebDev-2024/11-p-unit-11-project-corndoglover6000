@@ -11,7 +11,7 @@ html {
 }
 
 /* ======================== CSS Rule #2 */
-h1 {
+h1, p {
   font-family: "Schoolbell", sans-serif;
   text-align: center;
 }
@@ -27,6 +27,7 @@ body{
 
 img {
   width: 80px;
+  border-radius: 50%;
 }
 
 button{
@@ -35,6 +36,7 @@ button{
   padding: 20px;
   border-radius: 50%;
 }
+
 
 #buttons {
   width: 200px;
@@ -70,13 +72,27 @@ button{
   width: 600px;
   background-color:rgb(255, 235, 239);
   height:600px;
-  /* padding: 10%; */
+  padding: 10%;
   border-radius: 50%;
   margin: auto;
   display: flex;
-  justify-content: space-around;
   text-align: center;
   align-items: center;
+}
+
+#petri-dish:hover {
+  animation-name: myAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation {
+  0%   {box-shadow: 0 0 10px 0 rgb(245, 78, 12),0 0 10px 0 rgb(245, 78, 12)}
+  20%  {box-shadow: 0 0 10px 0 rgb(255, 220, 107), 0 0 10px 0 rgb(255, 220, 107)}
+  40%  {box-shadow: 0 0 10px 0 rgb(170, 239, 80), 0 0 10px 0 rgb(170, 239, 80)}
+  65%  {box-shadow: 0 0 10px 0 rgb(80, 167, 239), 0 0 10px 0 rgb(80, 167, 239)}
+  80% {box-shadow: 0 0 10px 0 rgb(145, 69, 216), 0 0 10px 0 rgb(145, 69, 216)}
+  100% {box-shadow: 0 0 10px 0 rgb(235, 36, 119), 0 0 10px 0 rgb(235, 36, 119)}
 }
 
 /* Bob  from https://ianlunn.github.io/Hover/#effects*/

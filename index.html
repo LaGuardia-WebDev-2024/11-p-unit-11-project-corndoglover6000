@@ -37,8 +37,18 @@ Select ONE Additional
         <img src="spike.PNG" class="hvr-bob">
         <img src="spike.PNG" class="hvr-bob">
         <img src="spike.PNG" class="hvr-bob">
+        <img src="spike.PNG" class="hvr-bob">
+        <img src="spike.PNG" class="hvr-bob">
+        <img src="spike.PNG" class="hvr-bob">
+        <img src="spike.PNG" class="hvr-bob">
+        <img src="spike.PNG" class="hvr-bob">
       </div>
       <div id="lilguy2">
+        <img src="wobble.PNG" class="hvr-bob">
+        <img src="wobble.PNG" class="hvr-bob">
+        <img src="wobble.PNG" class="hvr-bob">
+        <img src="wobble.PNG" class="hvr-bob">
+        <img src="wobble.PNG" class="hvr-bob">
         <img src="wobble.PNG" class="hvr-bob">
         <img src="wobble.PNG" class="hvr-bob">
         <img src="wobble.PNG" class="hvr-bob">
@@ -49,12 +59,23 @@ Select ONE Additional
         <img src="blob.PNG" class="hvr-bob">
         <img src="blob.PNG" class="hvr-bob">
         <img src="blob.PNG" class="hvr-bob">
+        <img src="blob.PNG" class="hvr-bob">
+        <img src="blob.PNG" class="hvr-bob">
+        <img src="blob.PNG" class="hvr-bob">
+        <img src="blob.PNG" class="hvr-bob">
+        <img src="blob.PNG" class="hvr-bob">
       </div>
     </div>
+
+    <p>
+      that's it
+    </p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#lilguy1").hide();
+      $("#lilguy2").hide();
+      $("#lilguy3").hide();
 
       // ======================== Button #1
       $("#mem1-button").click(function () {
@@ -63,13 +84,12 @@ Select ONE Additional
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#lilguy2").fadeIn(1000);
       });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+        $("#lilguy3").fadeIn(1000);
       });
 
 
